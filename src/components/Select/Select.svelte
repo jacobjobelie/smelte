@@ -112,7 +112,6 @@
       {placeholder}
       {hint}
       {error}
-      {append}
       {persistentHint}
       {color}
       {add}
@@ -128,7 +127,7 @@
       on:click-append={(e => showList = !showList)}
       on:click
       on:input={filterItems}
-      append="arrow_drop_down"
+      append={append||"arrow_drop_down"}
       appendReverse={showList}
     />
   </slot>
